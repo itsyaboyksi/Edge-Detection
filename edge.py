@@ -66,7 +66,7 @@ while True:
 	cv2.imshow('sobel Y',sketch2(frame))
 	cv2.imshow('Sobel X',sketch3(frame))
 	
-	if cv2.waitKey(1) & 0xFF == ord('q'):
+	if cv2.waitKey(3) & 0xFF == 27: #27 is the esc key
 		break
 
 cap.release()
